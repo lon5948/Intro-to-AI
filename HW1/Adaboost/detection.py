@@ -56,7 +56,6 @@ def detect(dataPath, clf):
       Returns:
         No returns.
     """
-    # Begin your code (Part 4)
     coordinate = {}
     coordinate['x1'] = []
     coordinate['y1'] = []
@@ -112,6 +111,3 @@ def detect(dataPath, clf):
         
     video.release()
     cv2.destroyAllWindows()
-    
-        
-    # End your code (Part 4)
