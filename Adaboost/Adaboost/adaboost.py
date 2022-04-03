@@ -148,6 +148,8 @@ class Adaboost:
             bestClf: The best WeakClassifier Class
             bestError: The error of the best classifer
         """
+        # Begin your code (Part 2)
+        
         #train weak
         allpos = 0
         allneg = 0

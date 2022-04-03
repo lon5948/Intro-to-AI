@@ -12,6 +12,7 @@ def loadImages(dataPath):
       Returns:
         dataset: The list of tuples.
     """
+    # Begin your code (Part 1)
     dataset = []
     car = dataPath+'/car'
     allfiles = os.listdir(car)
@@ -34,5 +35,6 @@ def loadImages(dataPath):
         label = 0
         tuples = (img,label)
         dataset.append(tuples)
+    # End your code (Part 1)
     
     return dataset
