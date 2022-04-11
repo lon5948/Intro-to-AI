@@ -8,3 +8,7 @@ NYCU 110下 / professor: 彭文志
 - Adaboost
 - Yolov 5
 
+### HW 2
+- ngram(uni/bi/tri)
+- BERT
+
