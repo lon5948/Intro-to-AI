@@ -10,6 +10,7 @@ NYCU 110下 / professor: 彭文志
 - Yolov 5
 
 ### HW 2
+- language model
 - sentiment classification
 - ngram(uni / bi / tri)
 - BERT
