@@ -15,3 +15,8 @@ NYCU 110下 / professor: 彭文志
 - ngram(uni / bi / tri)
 - BERT
 
+### HW 3
+- minimax search
+- expectimax search
+
+
