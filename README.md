@@ -18,5 +18,6 @@ NYCU 110下 / professor: 彭文志
 ### HW 3
 - minimax search
 - expectimax search
+- reinforcement learning
 
 
