@@ -222,13 +222,37 @@ def betterEvaluationFunction(currentGameState):
 
     DESCRIPTION: <write something here so we know what you did>
     """
-    "*** YOUR CODE HERE ***"
-    # Begin your code
-    util.raiseNotDefined()
-    # End your code
+    foodlist = currentGameState.getFood().asList()
+    food_num = len(foodlist)
+    ghost_states = currentGameState.getGhostStates()
+    pacman_pos = currentGameState.getPacmanPosition()
+    capsule_num = len(currentGameState.getCapsules())
+    score = currentGameState.getScore() 
+
+    score += foodlist.count(False)
+
+    food_distance = 0.0
+    for food in foodlist:
+        food_distance += util.manhattanDistance(pacman_pos,food)
+    if food_distance != 0:
+        score += 1.0/food_distance
+
+    total_scared = 0
+    total_ghost_distance = 0
+    for ghost in ghost_states:
+        total_scared += ghost.scaredTimer
+        total_ghost_distance += util.manhattanDistance(pacman_pos,ghost.getPosition())
+
+    if total_scared == 0:
+        score += total_ghost_distance + capsule_num  
+    else:
+        score += total_scared 
+        score -= total_ghost_distance + capsule_num
+
+    return score
 
 # Abbreviation
 """
 If you complete this part, please replace scoreEvaluationFunction with betterEvaluationFunction ! !
 """
-better = scoreEvaluationFunction # betterEvaluationFunction or scoreEvaluationFunction
+better = betterEvaluationFunction # betterEvaluationFunction or scoreEvaluationFunction
