@@ -19,5 +19,6 @@ NYCU 110下 / professor: 彭文志
 - minimax search
 - expectimax search
 - reinforcement learning
+- DQN
 
 
