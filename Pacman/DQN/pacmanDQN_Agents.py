@@ -23,7 +23,7 @@ from time import gmtime, strftime
 from collections import deque
 
 # model parameters
-model_trained = False
+model_trained = True
 
 GAMMA = 0.95  # discount factor
 LR = 0.01     # learning rate

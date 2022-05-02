@@ -72,6 +72,9 @@ class ValueIterationAgent(ValueEstimationAgent):
         for it in range(self.iterations):
             temp = util.Counter()
             for state in states:
+                if self.mdp.isTerminal(state):
+                    self.values[state] = 0
+                    continue
                 maxi = -100000
                 actions = self.mdp.getPossibleActions(state)
                 for action in actions:

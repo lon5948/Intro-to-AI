@@ -131,10 +131,8 @@ class MinimaxAgent(MultiAgentSearchAgent):
         """
         "*** YOUR CODE HERE ***"
         
-        max_depth = self.depth
-        
         def minimax(gameState,depth,agent):
-            if gameState.isLose() or gameState.isWin() or depth == max_depth:
+            if gameState.isLose() or gameState.isWin() or depth == self.depth:
                 return self.evaluationFunction(gameState)
             if agent == 0:
                 action_list = gameState.getLegalActions(0)
@@ -179,10 +177,8 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
         legal moves.
         """
         "*** YOUR CODE HERE ***"
-        max_depth = self.depth
-        
         def expectimax(gameState,depth,agent):
-            if gameState.isLose() or gameState.isWin() or depth == max_depth:
+            if gameState.isLose() or gameState.isWin() or depth == self.depth:
                 return self.evaluationFunction(gameState)
             if agent == 0:
                 action_list = gameState.getLegalActions(0)
@@ -222,6 +218,12 @@ def betterEvaluationFunction(currentGameState):
 
     DESCRIPTION: <write something here so we know what you did>
     """
+
+    if currentGameState.isWin():
+        return 10000000
+    elif currentGameState.isLose():
+        return -10000000
+
     foodlist = currentGameState.getFood().asList()
     food_num = len(foodlist)
     ghost_states = currentGameState.getGhostStates()
@@ -250,6 +252,7 @@ def betterEvaluationFunction(currentGameState):
         score -= total_ghost_distance + capsule_num
 
     return score
+    
 
 # Abbreviation
 """
