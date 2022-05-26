@@ -2,23 +2,23 @@
 NYCU 110下 / professor: 彭文志
 
 ### HW 0
-- open CV
+- Open CV
 
 ### HW 1
-- Viola-Jones detection
+- Viola-Jones Detection
 - Adaboost
 - Yolov 5
 
 ### HW 2
-- language model
-- sentiment classification
-- ngram(uni / bi / tri)
+- Language Model
+- Sentiment Classification
+- Ngram(uni / bi / tri)
 - BERT
 
 ### HW 3
-- minimax search
-- expectimax search
-- reinforcement learning
+- Minimax Search
+- Expectimax Search
+- Reinforcement Learning
 - DQN
 
 
