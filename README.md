@@ -21,4 +21,10 @@ NYCU 110下 / professor: 彭文志
 - Reinforcement Learning
 - DQN
 
+### HW 4
+- LIME
+- SHAP
+- XAI
+- Attack NLP
+
 
