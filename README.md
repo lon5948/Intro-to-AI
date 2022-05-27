@@ -24,7 +24,7 @@ NYCU 110下 / professor: 彭文志
 ### HW 4
 - LIME
 - SHAP
-- XAI
+- Explainable AI
 - Attack NLP
 
 
