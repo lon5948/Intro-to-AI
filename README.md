@@ -22,9 +22,9 @@ NYCU 110下 / professor: 彭文志
 - DQN
 
 ### HW 4
+- Explainable AI
 - LIME
 - SHAP
-- Explainable AI
 - Attack NLP
 
 
